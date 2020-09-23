@@ -42,11 +42,11 @@ class Song
 
     def artist_count
       artist_count = {}
-      @@artists.each do |key, value|
-        if artist_count.has_key? key
+      @@artists.each do |artist|
+        if artist_count.has_key?("#{artist}")
           value += 1
         else
-          artist_count[key] = 1
+          artist_count[artist] = 1
         end
       end
     end
