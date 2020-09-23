@@ -27,7 +27,7 @@ class Song
     @@artists.uniq
   end
 
-  def genre_count
+  def self.genre_count
     genre_hash = {}
     @@genres.each do |genre|
       if genre_hash.has_key?"#{genre}"
@@ -39,7 +39,7 @@ class Song
     genre_hash
   end
 
-    def artist_count
+    def self.artist_count
       artist_songs = {}
       @@artists.each do |artist|
         if artist_songs.has_key?("#{artist}")
