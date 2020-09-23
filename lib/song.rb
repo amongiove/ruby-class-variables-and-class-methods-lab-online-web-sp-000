@@ -29,8 +29,6 @@ class Song
 
   def genre_count
     genre_songs = {}
-    #for each genre in @genre, add key with value 1
-    #if genre key already present, add +1 to value
     @@genres.each do |genre|
       if genre_songs.has_key?("#{genre}")
         value += 1
