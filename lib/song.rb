@@ -45,6 +45,6 @@ class Song
           artist_count[key] => 1
         end
       end
-  end
+    end
 
 end
