@@ -36,10 +36,8 @@ class Song
       end
     end
 
-    def genre_count
-      genre_count = {}
-      #for each genre in @genre, add key with value 1
-      #if genre key already present, add +1 to value
+    def artist_count
+      artist_count = {}
       @artists.each |key, value|
         if artist_count.has_key? key
           value += 1
@@ -47,8 +45,6 @@ class Song
           artist_count[key] => 1
         end
       end
-
-
   end
 
 end
