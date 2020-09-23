@@ -32,7 +32,7 @@ class Song
       if genre_count.has_key? key
         value += 1
       else
-        genre_count[key] => 1
+        genre_count[key] = 1
       end
     end
   end
@@ -43,7 +43,7 @@ class Song
         if artist_count.has_key? key
           value += 1
         else
-          artist_count[key] => 1
+          artist_count[key] = 1
         end
       end
     end
