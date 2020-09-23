@@ -31,11 +31,11 @@ class Song
     genre_count = {}
     #for each genre in @genre, add key with value 1
     #if genre key already present, add +1 to value
-    @@genres.each do |key, value|
-      if genre_count.has_key? key
+    @@genres.each do |genre|
+      if genre_count.has_key?("#{genre}")
         value += 1
       else
-        genre_count[key] = 1
+        genre_count[genre] = 1
       end
     end
   end
