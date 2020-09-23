@@ -35,7 +35,7 @@ class Song
       #else
       #  genre_songs[genre] = 1
       #end
-    #end
+    end
     #genre_songs
   end
 
