@@ -29,12 +29,12 @@ class Song
 
   def genre_count
     genre_hash = {}
-    @@genres.each {|genre| genre_hash["#{genre}"] += 1}
-      #if genre_songs.has_key?("#{genre}")
-      #  value += 1
-      #else
-      #  genre_songs[genre] = 1
-      #end
+    @@genres.each do |genre|
+      if genre_hash.has_key?"#{genre}"
+        genre_hash[genre] += 1
+      else
+       genre_hash[genre] = 1
+      end
     end
     genre_hash
   end
