@@ -35,6 +35,7 @@ class Song
         genre_count[key] => 1
       end
     end
+  end
 
     def artist_count
       artist_count = {}
